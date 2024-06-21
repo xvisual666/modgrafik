@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XVISUAL</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="img/fivem.png" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="dropdown">
+        <button class="dropbtn">MENU</button>
+        <div class="dropdown-content">
+          <a href="https://xvisual666.github.io/tutordek/" target="_blank"
+            >TUTORIAL MOD</a
+          >
+          <a href="https://discord.gg/dAaZ9FQY" target="_blank">JOIN DISCORD</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="floating-box">
+    <h3>CARA ORDER MODS / PRESETS</h3>
+    <hr>
+    <ol>
+    <li>Isi email, nomor tiket, dan kode promo (jika ada).</li>
+    <li>Pilih mod/presets untuk melihat biaya donasi (+Garansi atau +Pemasangan jika diinginkan).</li>
+    <li>Klik tombol donasi dan selesaikan di Saweria. Masukkan ID Discord di pesan Saweria.</li>
+    </ol>
+    </div>
+
+    <div class="container">
+      <h1>XVISUAL</h1>
+
+      <input type="text" id="discord-id" placeholder="Email" />
+      <input type="text" id="ticket" placeholder="Nomor Tiket" />
+      <input type="text" id="discount" placeholder="Kode Promo (tidak wajib)" />
+      <!-- input untuk kode diskon -->
+
+      <h1>PILIH ITEM</h1>
+      <div class="items">
+        <div class="item" data-price="50000">
+          <img src="img/winrar.png" alt="ReShade Icon" width="24" height="24" />
+          NATURAL VISION EVOLVED (14 JUNI)
+        </div>
+
+        <div class="item" data-price="50000">
+          <img src="img/winrar.png" alt="ReShade Icon" width="24" height="24" />
+          QUANTV RESHADE (14 JUNI)
+          <span class="tooltiptext"> FREE Reshade Presets </span>
+        </div>
+
+        <div class="item" data-price="50000">
+          <img src="img/winrar.png" alt="ReShade Icon" width="24" height="24" />
+          RAY TRACING (RTGI)
+          <span class="tooltiptext"> FREE 10 Reshade Presets RTGI </span>
+        </div>
+
+        <div class="item" data-price="50000">
+          <img src="img/winrar.png" alt="ReShade Icon" width="24" height="24" />
+          DLSS, DLAA, FSR UPSCALER
+        </div>
+
+        <div class="item" data-price="50000" style="display: none">
+          <img src="img/winrar.png" alt="ReShade Icon" width="24" height="24" />
+          8 LEVEL MOTION BLUR
+        </div>
+
+        <div class="item" data-price="50000" style="display: none">
+          <img src="img/winrar.png" alt="ReShade Icon" width="24" height="24" />
+          QUANTV ENB
+        </div>
+
+        <div class="item" data-price="50000" style="display: none">
+          <img src="img/winrar.png" alt="ReShade Icon" width="24" height="24" />
+          NOPIXEL KOIL SHADERS
+        </div>
+
+        <div class="item" data-price="100000" style="display: none">
+          <img src="img/winrar.png" alt="ReShade Icon" width="24" height="24" />
+          5 PACK MOD JALAN
+          <span class="tooltiptext"
+            >+MINECRAFT ROADS<br />+LIGHTING ROADS<br />+LA REVO ROADS<br />+GERMAN
+            ROADS<br />+EUROPE ROADS<br />+NVE ROADS (Bonus)</span
+          >
+        </div>
+
+        <div class="item" data-price="50000" style="display: none">
+          <img src="img/winrar.png" alt="ReShade Icon" width="24" height="24" />
+          ADVANCE STREET LIGHT
+        </div>
+
+        <!-- PRESETS -->
+        <div class="item" data-price="100000" style="display: none">
+          <img
+            src="img/reshade.png"
+            alt="ReShade Icon"
+            width="24"
+            height="24"
+          />
+          RESHADE PRESETS X EDITION
+                    <span class="tooltiptext"> SIGNATURE PRESETS (ISI 10) </span>
+        </div>
+
+        <div class="item" data-price="100000" style="display: none">
+          <img
+            src="img/reshade.png"
+            alt="ReShade Icon"
+            width="24"
+            height="24"
+          />
+          MEGAPACK FX RESHADE
+        </div>
+
+        <div class="item" data-price="99999999" style="display: none">
+          CUSTOM MODS / PRESETS
+          <span class="tooltiptext"
+            >Hanya dapat dipesan setelah melakukan request. Silakan hubungi
+            Admin melalui room tiket</span
+          >
+        </div>
+        <div class="expand-btn" style="cursor: pointer">
+          &#x25BC; Expand All Items
+        </div>
+      </div>
+      <h1>OPSIONAL</h1>
+      <div class="items">
+        <div class="item" data-price="10000">
+          GARANSI
+          <span class="tooltiptext"
+            >JIKA INGIN FREE UPDATE DARI NVE / QUANTV SAMPAI AKHIR BULAN SILAKAN TAMBAHKAN ITEM INI</span
+          >
+        </div>
+        <div class="item" data-price="10000">
+          JASA PASANG MOD / PRESETS
+          <span class="tooltiptext"
+            >SILAKAN TAMBAHKAN ITEM INI JIKA INGIN MOD / PRESETS DI INSTALKAN LANGSUNG OLEH ADMIN (FREE FIVEM SETTINGS)</span
+          >
+        </div>
+      </div>
+      <div class="total">
+        NOMINAL YANG HARUS DIDONASIKAN PADA SAWERIA UNTUK MENGAKSES FILE : <span id="total-price">0</span>
+      </div>
+      <a
+        href="https://saweria.co/XVISUAL"
+        class="btn-pay"
+        id="donate-btn"
+        disabled
+        >DONASI</a
+      >
+    </div>
+<p>Untuk Pembelian luar Indonesia, silakan chat admin melalui tiket.<br>Dan jangan lupa untuk kunjungi WEBMOD secara berkala untuk dapat melihat list baru dari mods / presets yang disediakan kedepannya.<br>Terimakasih</p>
+    <script src="script.js"></script>
+  </body>
+</html>
