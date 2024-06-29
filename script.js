@@ -54,7 +54,7 @@ function calculateTotal() {
     bill: 0.1,
     hehopanda: 0.1,
     boomzer: 0.1,
-    riianes: 0.25,
+    hesoyam: 0.25,
   };
 
   if (discountCodes.hasOwnProperty(discountCodeValue)) {
